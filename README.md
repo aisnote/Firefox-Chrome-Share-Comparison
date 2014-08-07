@@ -8,17 +8,17 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
-| Versions | Nightly Aurora | All |  |
+| Versions | Nightly & Aurora | All |  |
 | Method | Drive by web | Packaged App |  |
 | Preference needed | Yes, two | No | See note below for pref details |
 | HTTPS | Yes, page must use HTTPS | No, packaged app is local |  |
-| Screen Share | Yes | Yes |  |
-| Screen Selection | No | Yes |  |
-| Window Share | Yes  | Yes |  |
-| Window Selection | Yes  | Yes |  |
-| Tab Share | No  | Yes |  |
-| Constraint for screen |  |  |
-| Constraint for window |  |  |
+| Feature: Screen Share | Yes | Yes |  |
+| Feature: Screen Selection | No | Yes |  |
+| Feature: Window Share | Yes  | Yes |  |
+| Feature: Window Selection | Yes  | Yes |  |
+| Feature: Tab Share | No  | Yes |  |
+| Constraint for screen share | mediaSource: "screen" | chromeMediaSource: 'screen' | |
+| Constraint for window share |  |  |
 | Audio + Video + Share, 1 PeerConnection  | No, Need two  | Yes  | See note below |
 | Selection UI |  |  | |
 | UI when sharing | Small window at tom of screen  | Strip below browser  | See note |
