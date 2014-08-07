@@ -36,3 +36,7 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 
 If an application wants to have an audio \ video stream as well as share this is possible on Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.
 
+
+![Firefox Window Share UI](https://github.com/emannion/Firefox-Chrome-Share-Comparison/blob/master/firefox_window_share_ui.png "Firefox Window Share UI")
+
+
