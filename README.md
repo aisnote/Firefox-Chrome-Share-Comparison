@@ -1,15 +1,15 @@
 Firefox-Chrome-Share-Comparison
 ===============================
 
-Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone. 
+Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion WebRTC and hopes to keep the information as current as possible.
 
 
 ### Comparison
 
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
-| Version | Nightly Aurora | All |  |
-| Method | Drive by | Packaged App |  |
+| Versions | Nightly Aurora | All |  |
+| Method | Drive by web | Packaged App |  |
 | Preference needed | Yes, two | No | See note below for pref details |
 | HTTPS | Yes, page must use HTTPS | No, packaged app is local |  |
 | Screen Share | Yes | Yes |  |
@@ -26,14 +26,13 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 
 
 
-Firefox Preferences for Share
+####  Firefox Preferences for Share
 
-media.getusermedia.screensharing.enabled                     set this to true
+- media.getusermedia.screensharing.enabled                     set this to true
+- media.getusermedia.screensharing.allowed_domains    e.g. ‘mozilla.github.io’
 
-media.getusermedia.screensharing.allowed_domains    e.g. ‘mozilla.github.io’
 
-
-Peer Connections to signal media
+####  Peer Connections to signal media
 
 If an application wants to have an audio \ video stream as well as sending share this is possible on Chrome using one PeerConnection JavaScript object but Firefox required two, one for Audio \ Video and anothe rone for share.
 
