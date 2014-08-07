@@ -9,7 +9,7 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
 | Versions | Nightly & Aurora | All |  |
-| Method | Drive by web | Packaged App |  |
+| Deployment method | Drive by web | Packaged App |  |
 | Preference needed | Yes, two | No | See note below for pref details |
 | HTTPS | Yes, page must use HTTPS | No, packaged app is local |  |
 | Feature: Screen Share | Yes | Yes |  |
@@ -18,9 +18,9 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 | Feature: Window Selection | Yes  | Yes |  |
 | Feature: Tab Share | No  | Yes |  |
 | Constraint for screen share | mediaSource: "screen" | chromeMediaSource: 'screen' | |
-| Constraint for window share |  |  |
-| Audio + Video + Share, 1 PeerConnection  | No, Need two  | Yes  | See note below |
-| Selection UI |  |  | |
+| Constraint for window share | mediaSource: ”window" | chromeMediaSource: ’desktop' | |
+| Audio + Video + Share, Num PeerConnections  | Need two  | One  | See note below |
+| Selection UI | Drop down box similar to camera selection | Separate UI popout  | see images below |
 | UI when sharing | Small window at tom of screen  | Strip below browser  | See note |
 
 
@@ -34,5 +34,5 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 
 ####  Peer Connections to signal media
 
-If an application wants to have an audio \ video stream as well as sending share this is possible on Chrome using one PeerConnection JavaScript object but Firefox required two, one for Audio \ Video and anothe rone for share.
+If an application wants to have an audio \ video stream as well as share this is possible on Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.
 
