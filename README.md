@@ -17,9 +17,11 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 | Window Share | Yes  | Yes |  |
 | Window Selection | Yes  | Yes |  |
 | Tab Share | No  | Yes |  |
-| Constraints |  |  |
-| Audio + Video + Share, 1 PeerConnection  | No, Need two  | Yes  |
-|  |  |  |
+| Constraint for screen |  |  |
+| Constraint for window |  |  |
+| Audio + Video + Share, 1 PeerConnection  | No, Need two  | Yes  | See note below |
+| Selection UI |  |  | |
+| UI when sharing | Small window at tom of screen  | Strip below browser  | See note |
 
 
 
@@ -27,4 +29,11 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 Firefox Preferences for Share
 
 media.getusermedia.screensharing.enabled                     set this to true
+
 media.getusermedia.screensharing.allowed_domains    e.g. ‘mozilla.github.io’
+
+
+Peer Connections to signal media
+
+If an application wants to have an audio \ video stream as well as sending share this is possible on Chrome using one PeerConnection JavaScript object but Firefox required two, one for Audio \ Video and anothe rone for share.
+
