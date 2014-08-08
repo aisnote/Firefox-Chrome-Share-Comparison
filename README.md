@@ -1,16 +1,17 @@
 Firefox-Chrome-Share-Comparison
 ===============================
 
-Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion WebRTC and hopes to keep the information as current as possible.
+Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
+Chrome can share the desktop using getUserMedia in a HTTPS web page and using the flag (chrome://flags/#enable-usermedia-screen-capture) but Google recommends doing share using a packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension.
 
 ### Comparison
 
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
 | Versions | Nightly & Aurora | All |  |
-| Deployment method | Drive by web | Packaged App |  |
-| Preference needed | Yes, two | No | See note below for pref details |
+| Deployment method | Drive by web | Packaged App | See Extension note |
+| Preference needed | Yes, two | No | See note below for Firefox pref details |
 | HTTPS | Yes, page must use HTTPS | No, packaged app is local |  |
 | Feature: Screen Share | Yes | Yes |  |
 | Feature: Screen Selection | No | Yes |  |
@@ -24,6 +25,8 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 | UI when sharing | Small window at tom of screen  | Strip below browser  | See note |
 
 
+#### Chrome extension selection
+It is possible to do share in either an extension or a packages application. It is not possible to do both audio \ video capture and share in an extension but this is possible using a packaged application. In the case of an extension then share could be done in the extension and audio \ video done on the drive by web page which uses the extension.
 
 
 ####  Firefox Preferences for Share
