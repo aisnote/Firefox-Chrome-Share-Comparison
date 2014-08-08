@@ -10,9 +10,9 @@ Chrome can share the desktop using getUserMedia in a HTTPS web page and using th
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
 | Versions | Nightly & Aurora | All |  |
-| Deployment method | Drive by web | Packaged App | See Extension note |
+| Deployment method | Drive by web | Packaged App, Extension | See Extension note |
 | Preference needed | Yes, two | No | See note below for Firefox pref details |
-| HTTPS | Yes, page must use HTTPS | No, packaged app is local |  |
+| HTTPS | Yes, page must use HTTPS | No, packaged app or extension is local |  |
 | Feature: Screen Share | Yes | Yes |  |
 | Feature: Screen Selection | No | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
