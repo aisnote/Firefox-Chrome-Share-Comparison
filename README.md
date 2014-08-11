@@ -3,7 +3,7 @@ Firefox-Chrome-Share-Comparison
 
 Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
-Chrome can share the desktop using getUserMedia in a HTTPS web page and using the flag (chrome://flags/#enable-usermedia-screen-capture) but Google recommends doing share using a packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension.
+Chrome can share the desktop using getUserMedia in a HTTPS web page and using the flag (chrome://flags/#enable-usermedia-screen-capture) but Google recommends doing share using an extension or packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension.
 
 ### Comparison
 
@@ -22,7 +22,7 @@ Chrome can share the desktop using getUserMedia in a HTTPS web page and using th
 | Constraint for window share | mediaSource: ”window" | chromeMediaSource: ’desktop' | |
 | Audio + Video + Share, Num PeerConnections  | Need two  | One  | See note below |
 | Selection UI | Drop down box similar to camera selection | Separate UI popout  | see images below |
-| UI when sharing | Small window at tom of screen  | Strip below browser  | See note |
+| UI when sharing | Small window at top of screen  | Strip below browser  | See note |
 
 
 #### Chrome extension selection
@@ -31,7 +31,7 @@ It is possible to do share in either an extension or a packages application. It 
 
 ####  Firefox Preferences for Share
 
-- media.getusermedia.screensharing.enabled                     set this to true
+- media.getusermedia.screensharing.enabled            set this to true
 - media.getusermedia.screensharing.allowed_domains    e.g. ‘mozilla.github.io’
 
 
