@@ -3,7 +3,7 @@ Firefox-Chrome-Share-Comparison
 
 Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
-Chrome can share the desktop using getUserMedia in a HTTPS web page and using the flag (chrome://flags/#enable-usermedia-screen-capture) but Google recommends doing share using an extension or packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension.
+Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension and Firefox as a normal Web Application.
 
 ### Comparison
 
@@ -37,7 +37,7 @@ It is possible to do share in either an extension or a packages application. It 
 
 ####  Peer Connections to signal media
 
-If an application wants to have an audio \ video stream as well as share this is possible on Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.
+If an application wants to have an audio \ video stream as well as share this is possible on Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.  To make Chrome and Firefox talk together for both share and Audio \ Video streams two peerconnectons should be used on both sides.
 
 
 ### Firefox Window selection UI
