@@ -3,16 +3,16 @@ Firefox-Chrome-Share-Comparison
 
 Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
-Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome packaged application which enables the app to do much more including screen and application selection.  This doc describes Chrome share as using a packaged application or extension and Firefox as a normal Web Application.
+Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome App, formally known as Chrome packaged application which will enable the app to do much more including screen and application selection.  This doc describes Chrome share as using a Chrome app and Firefox as a normal Web Application.
 
 ### Comparison
 
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
-| Versions | Nightly & Aurora | All |  |
-| Deployment method | Drive by web | Packaged App, Extension | See Extension note |
+| Versions | All | All |  |
+| Deployment method | Drive by web | Chrome App, Extension | See Extension note |
 | Preference needed | Yes, two | No | See note below for Firefox pref details |
-| HTTPS | Yes, page must use HTTPS | No, packaged app or extension is local |  |
+| HTTPS | Yes, page must use HTTPS | No, Chrome App or extension is local |  |
 | Feature: Screen Share | Yes | Yes |  |
 | Feature: Screen Selection | No | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
