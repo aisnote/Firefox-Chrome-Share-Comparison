@@ -3,7 +3,7 @@ Firefox-Chrome-Share-Comparison
 
 Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
-Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome App, formally known as Chrome packaged application which will enable the app to do much more including screen and application selection.  This doc describes Chrome share as using a Chrome app and Firefox as a normal Web Application.
+Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome App, formally known as Chrome packaged application which will enable the app to do much more including screen and application selection.  This doc describes Chrome share as using a Chrome App and Firefox as a normal Web Application.
 
 ### Comparison
 
@@ -17,9 +17,9 @@ Chrome can share the desktop using getUserMedia in a HTTPS web page when the sta
 | Feature: Screen Selection | No | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
 | Feature: Window Selection | Yes  | Yes |  |
-| Feature: Tab Share | No  | Yes |  |
-| Constraint for screen share | mediaSource: "screen" | chromeMediaSource: 'screen' | |
-| Constraint for window share | mediaSource: ”window" | chromeMediaSource: ’desktop' | |
+| Feature: Tab Capture \ Share | No  | Yes |  |
+| Constraint for screen share | mediaSource: "screen" | chooseDesktopMedia: 'screen' | |
+| Constraint for window share | mediaSource: ”window" | chooseDesktopMedia: ’window' | |
 | Audio + Video + Share, Num PeerConnections  | Need two  | One  | See note below |
 | Selection UI | Drop down box similar to camera selection | Separate UI popout  | see images below |
 | UI when sharing | Small window at top of screen  | Strip below browser  | See note |
@@ -31,8 +31,8 @@ It is possible to do share in either an extension or a packages application. It 
 
 ####  Firefox Preferences for Share
 
-- media.getusermedia.screensharing.enabled            set this to true
-- media.getusermedia.screensharing.allowed_domains    e.g. ‘mozilla.github.io’
+- media.getusermedia.screensharing.enabled                       set this to true
+- media.getusermedia.screensharing.allowed_domains (whitelist)   e.g. ‘mozilla.github.io’
 
 
 ####  Peer Connections to signal media
