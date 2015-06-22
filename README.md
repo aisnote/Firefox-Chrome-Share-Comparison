@@ -47,3 +47,26 @@ If an application wants to have an audio \ video stream as well as share this is
 ### Chrome Window and Screen selection UI
 ![Chrome Window Share UI](https://github.com/emannion/Firefox-Chrome-Share-Comparison/blob/master/chrome_window_share_ui.png "Chrome Window Share UI")
 
+#### Chrome Inline Installation
+
+To make using a Chrome extension easier in a Web Site it is possible to add a link to a page header and install using one click.
+
+```javascript
+<link rel="chrome-webstore-item" 
+   href="https://chrome.google.com/webstore/detail/..."
+/>
+```
+
+Then add something like this to the JavaScript.
+```javascript
+chrome.webstore.install(
+    'https://chrome.google.com/webstore/detail/...',
+    function (arg) {
+        // needs a reload
+        window.location.reload();
+    },
+    function (err) {
+        // handle error
+    }
+);
+```
