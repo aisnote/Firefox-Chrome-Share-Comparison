@@ -14,7 +14,7 @@ Chrome can share the desktop using getUserMedia in a HTTPS web page when the sta
 | Preference needed | Yes, two | No | See note below for Firefox pref details |
 | HTTPS | Yes, page must use HTTPS | No, Chrome App or extension is local |  |
 | Feature: Screen Share | Yes | Yes |  |
-| Feature: Screen Selection | No | Yes |  |
+| Feature: Screen Selection (Multiple VDUs attached) | No | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
 | Feature: Window Selection | Yes  | Yes |  |
 | Feature: Tab Capture \ Share | No  | Yes |  |
@@ -37,7 +37,7 @@ It is possible to do share in either an extension or a packages application. It 
 
 ####  Peer Connections to signal media
 
-If an application wants to have an audio \ video stream as well as share this is possible on Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.  To make Chrome and Firefox talk together for both share and Audio \ Video streams two peerconnectons should be used on both sides.
+If an application wants to have an audio \ video stream as well as share this is possible in Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.  To make Chrome and Firefox talk together for both share and Audio \ Video streams two peerconnectons should be used on both sides.
 
 
 ### Firefox Window selection UI
