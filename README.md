@@ -7,7 +7,7 @@ Chrome can share the desktop using getUserMedia in a HTTPS web page when the sta
 
 Some of the information on this table may be incorrect as more features get developed.
 
-### Comparison
+### WebRTC share Comparison
 
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
