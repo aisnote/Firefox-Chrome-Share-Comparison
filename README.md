@@ -19,7 +19,7 @@ Some of the information on this table may be incorrect as more features get deve
 | Feature: Screen Selection (Multiple VDUs attached) | No | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
 | Feature: Window Selection | Yes  | Yes |  |
-| Feature: Tab Capture \ Share | No  | Yes, using chrome.tabCapture |  |
+| Feature: Tab Capture \ Share | No  | Yes, using chrome.tabCapture | Allowed in extensions and legacy packaged apps not chrome apps |
 | Constraint for screen share | mediaSource: "screen" | chooseDesktopMedia: 'screen' | |
 | Constraint for window share | mediaSource: ”window" | chooseDesktopMedia: ’window' | |
 | Constraint for tab share |  | chooseDesktopMedia: ’tab' | Not implemented yet |
