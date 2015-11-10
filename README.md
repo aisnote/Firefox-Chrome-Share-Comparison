@@ -23,6 +23,7 @@ Some of the information on this table may be incorrect as more features get deve
 | Constraint for screen share | mediaSource: "screen" | chooseDesktopMedia: 'screen' | |
 | Constraint for window share | mediaSource: ”window" | chooseDesktopMedia: ’window' | |
 | Constraint for tab share |  | chooseDesktopMedia: ’tab' | Not implemented yet |
+| User consent required | Yes, similar to Audio and Video  | Yes, alert message, yes or no |  |
 | Audio + Video + Share, Num PeerConnections  | Need two  | One  | See note below |
 | Selection UI | Drop down box similar to camera selection | Separate UI popout  | see images below |
 | UI when sharing | Small window at top of screen  | Strip below browser  | See note |
