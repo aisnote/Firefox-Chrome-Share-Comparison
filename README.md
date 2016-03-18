@@ -5,6 +5,8 @@ Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google
 
 Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome App, formally known as Chrome packaged application which will enable the app to do much more including screen and application selection.  This doc describes Chrome share as using a Chrome App and Firefox as a normal Web Application.
 
+It is possible to use a Firefox extension for screen share which gives a number of advantages over a web application including not requiring the use of two about:flags options described below in the section: "Firefox Preferences for Share".
+
 Some of the information on this table may be incorrect as more features get developed.
 
 ### WebRTC share Comparison
