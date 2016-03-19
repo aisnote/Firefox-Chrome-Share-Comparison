@@ -1,7 +1,7 @@
 Firefox-Chrome-Share-Comparison
 ===============================
 
-Compare WebRTC share features across Firefox and Chrome, both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
+Comparison of WebRTC share features across Firefox and Chrome. Both Mozilla and Google are making great progress bringing plugin free HTML5 browsing to everyone.  This document attempts to compare the share portion of WebRTC and hopes to keep the information as current as possible.
 
 Chrome can share the desktop using getUserMedia in a HTTPS web page when the startup parameter --enable-usermedia-screen-capturing is used. Google recommends doing share using a Chrome App, formally known as Chrome packaged application which will enable the app to do much more including screen and application selection.  This doc describes Chrome share as using a Chrome App and Firefox as a normal Web Application.
 
@@ -14,7 +14,7 @@ Some of the information on this table may be incorrect as more features get deve
 | Compare        | Firefox           | Chrome | Note |
 | ------------- |-------------|-------------|-------------|
 | Versions | All (Release, Beta, Central, Aurora) | All (Release, Beta, Canary, Dev) |  |
-| Deployment method | Drive by web | Chrome App, Extension | See Extension note |
+| Deployment method | Drive by web, Extension | Chrome App, Extension | See Extension note |
 | Preference needed | Yes, two | No | See note below for Firefox pref details |
 | HTTPS | Yes, page must use HTTPS | No, Chrome App or extension is local |  |
 | Feature: Screen Share | Yes | Yes |  |
@@ -43,7 +43,7 @@ It is possible to do share in either an extension or a packages application. It 
 
 ####  Peer Connections to signal media
 
-If an application wants to have an audio \ video stream as well as share this is possible in Chrome using one PeerConnection JavaScript object but Firefox requires two, one for Audio \ Video and another one for share.  To make Chrome and Firefox talk together for both share and Audio \ Video streams two peerconnectons should be used on both sides.
+If an application wants to have an Audio \ Video stream as well as Share and work across Firefox and Chrome there are some difficulties. There are differences in the session descriptions which make them incompatable.  This is not the case when only Audio and Video is used or when only Share is used, one PeerConnection will suffice.  There are two possible solutions until Chrome finishes the implementation of Unified Plan.  1).  Can use two PeerConnections accross both browsers, one for audio and video and one for share.  2). There is a polyfill called sdp-interop which can be used to make the session descriptions common across both browsers and prevent usage of two Peer Connections. 
 
 
 ### Firefox Window selection UI
