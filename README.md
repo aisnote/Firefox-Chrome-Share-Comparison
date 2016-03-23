@@ -16,7 +16,7 @@ Some of the information on this table may be incorrect as more features get deve
 | Versions | All (Release, Beta, Central, Aurora) | All (Release, Beta, Canary, Dev) |  |
 | Deployment method | Drive by web, Extension | Chrome App, Extension | See Extension note |
 | Preference needed | Yes, two | No | See note below for Firefox pref details |
-| HTTPS | Yes, page must use HTTPS | No, Chrome App or extension is local |  |
+| HTTPS | Yes, page must use HTTPS | No t required but can use HTTPS |  |
 | Feature: Screen Share | Yes | Yes |  |
 | Feature: Screen Selection (Multiple VDUs attached) | Yes | Yes |  |
 | Feature: Window Share | Yes  | Yes |  |
@@ -38,7 +38,7 @@ It is possible to do share in either an extension or a packages application. It 
 ####  Firefox Preferences for Share
 
 - media.getusermedia.screensharing.enabled                       set this to true
-- media.getusermedia.screensharing.allowed_domains (whitelist)   e.g. ‘mozilla.github.io’
+- media.getusermedia.screensharing.allowed_domains (whitelist)   e.g. ‘mozilla.github.io, 10.53.67.77’
 
 
 ####  Peer Connections to signal media
