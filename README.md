@@ -50,7 +50,7 @@ If an application wants to have an Audio \ Video stream as well as Share and wor
 ![Firefox Window Share UI](https://github.com/emannion/Firefox-Chrome-Share-Comparison/blob/master/firefox_window_share_ui.png "Firefox Window Share UI")
 
 
-### Chrome Window and Screen selection UI
+### Chrome Window, Screen and Tab selection UI
 ![Chrome Window Share UI](https://github.com/emannion/Firefox-Chrome-Share-Comparison/blob/master/chrome_window_share_ui.png "Chrome Window Share UI")
 
 #### Chrome Inline Installation
