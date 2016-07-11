@@ -22,9 +22,10 @@ Some of the information on this table may be incorrect as more features get deve
 | Feature: Window Share | Yes  | Yes |  |
 | Feature: Window Selection | Yes  | Yes |  |
 | Feature: Tab Capture \ Share | No  | Yes, using chrome.tabCapture or chrome.chooseDesktopMedia | Allowed in extensions and legacy packaged apps not chrome apps |
-| Constraint for screen share | mediaSource: "screen" | chooseDesktopMedia: 'screen' | |
-| Constraint for window share | mediaSource: ”window" | chooseDesktopMedia: ’window' | |
-| Constraint for tab share | Not Implemented  | chooseDesktopMedia: ’tab' | Behind flag since Chrome 50 |
+| Constraint for screen share | mediaSource: 'screen' | chooseDesktopMedia: 'screen' | |
+| Constraint for window share | mediaSource: 'window' | chooseDesktopMedia: 'window' | |
+| Constraint for application share | mediaSource: 'application' | Not Supported | |
+| Constraint for tab share | Not Implemented  | chooseDesktopMedia: 'tab' | Behind flag since Chrome 50 |
 | User consent required | Yes, similar to Audio and Video  | Yes, alert message, yes or no |  |
 | Audio + Video + Share, Num PeerConnections  | Need two when talking to Chrome  | One or two when talking to Firefox  | See note below |
 | Selection UI | Drop down box similar to camera selection | Separate UI popout  | see images below |
